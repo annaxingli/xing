@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>xing-portfolios</title>
-    <link href="https://fonts.googleapis.com/css?family=Francois+One|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xing Li - Creative Portfolio</title>
+    <meta name="description" content="Xing Li's creative portfolio showcasing design, development, and photography work">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <style>
+      /* Critical CSS for initial load */
+      body { margin: 0; font-family: 'Open Sans', sans-serif; }
+      #app { min-height: 100vh; }
+      .loading { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        font-size: 1.2rem; 
+        color: #6b7280;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
+    <div id="app">
+      <div class="loading">Loading...</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
